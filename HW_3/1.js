@@ -5,10 +5,10 @@
 который получаем от функции, в консоль.
 */
 
-
-const num = +prompt('Задача1: ' + 'Введите число: ')
+/*
+const num = +prompt("Задача 1: " + "Введите число: ");
 function getCube(num) {
-  const cubeNumber = (num) => Math.pow(num, 3);
-  return cubeNumber(num);
+  return Math.pow(num, 3);
 }
 console.log(getCube(num));
+*/

@@ -14,11 +14,32 @@ const checkNumber = (number) => {
     return;
 } 
 if (number > 0) {
-clearSalary = (number - number * 0.13);
-console.log(`Размер заработной платы за вычетом налогов равен ${clearSalary}`);
+    const clearSalary = (number - number * 0.13);
+    console.log(`Размер заработной платы за вычетом налогов равен ${clearSalary.toFixed(
+        2)}`);
 } 
 }
 
 const number = +prompt('Задача 2: ' + 'Введите число: ');
+checkNumber(number);
+*/
+
+/*
+const checkNumber = (number) => {
+  if (Number.isNaN(number)) {
+    console.log("Значение задано неверно");
+    return;
+  }
+  if (number > 0) {
+    const clearSalary = number - number * 0.13;
+    console.log(
+      `Размер заработной платы за вычетом налогов равен ${clearSalary.toFixed(
+        2
+      )}`
+    );
+  }
+};
+
+const number = +prompt("Задача 2: " + "Введите число: ");
 checkNumber(number);
 */

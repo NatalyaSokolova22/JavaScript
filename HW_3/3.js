@@ -9,24 +9,24 @@
 */
 
 /*
-let number1 = +prompt('Задача 3: ' + 'Введите первое число: ');
-let number2 = +prompt('Задача 3: ' + 'Введите второе число: ');
-let number3 = +prompt('Задача 3: ' + 'Введите третье число: ');
+let number1 = +prompt("Задача 3: " + "Введите первое число: ");
+let number2 = +prompt("Задача 3: " + "Введите второе число: ");
+let number3 = +prompt("Задача 3: " + "Введите третье число: ");
 
-function getMax (number1, number2, number3) {
-  let max = 0;
-  if (number1 > number2)
-  {
+function getMax(number1, number2, number3) {
+  const max = 0;
+  if (number1 > number2) {
     max = number1;
-     } else
-  {
+  } else {
     max = number2;
-    }
-  if (number3 > max) 
-  {
+  }
+  if (number3 > max) {
     max = number3;
-    }
+  }
   return max;
 }
-console.log(`Максимальное значение среди чисел ${number1}, ${number2}, ${number3} равно ${getMax(number1, number2, number3)}`);
+console.log(
+  `Максимальное значение среди чисел ${number1}, ${number2}, ${number3} равно ` +
+    Math.max(number1, number2, number3)
+);
 */
