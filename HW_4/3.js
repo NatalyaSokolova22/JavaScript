@@ -25,7 +25,7 @@ function getRandomInt(min, max) {
 const array = [];
 
 for (let i = 0; i < 5; i++) {
-  array.push(getRandomInt(0, 9));
+  array.push(getRandomInt(0, 10));
 }
 console.log(array);
 
