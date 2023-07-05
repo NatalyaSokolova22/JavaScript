@@ -28,8 +28,8 @@ const post = {
   ],
 };
 
-const rank = post.comments.map((x) => x.rating);
-const rank2 = rank[0];
+const rat = post.comments.map((x) => x.rating);
+const rat2 = rat[0];
 const use = post.comments.map((a) => a.userId);
 const txt = post.comments.map((b) => b.text);
-console.log(post.author, rank2.dislikes, use[1], txt[1]);
+console.log(post.author, rat2.dislikes, use[1], txt[1]);

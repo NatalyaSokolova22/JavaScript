@@ -1,5 +1,3 @@
-"use strict";
-
 // Задание 4:
 // 1. Необходимо вывести в консоль массив продуктов, в котором есть хоть одна фотография, используя метод filter.
 // Исходные данные - массив products.
@@ -7,6 +5,7 @@
 // самой большой ценой, после чего вывести отсортированный массив в консоль.
 // Если сложно работать с методами массива, то можно сделать и обычным циклом.
 
+/*
 const products = [
   {
     id: 3,
@@ -28,7 +27,11 @@ const products = [
     price: 78,
   },
 ];
-const productsImg = products.filter((product) => product.photos >= ".jpg");
-console.log(productsImg);
-products.sort((min, max) => min.price - max.price);
+const result = products.filter(
+  (product) => product.photos && product.photos.length > 0
+);
+console.log(result);
+
+products.sort((a, b) => a.price - b.price);
 console.log(products);
+*/
