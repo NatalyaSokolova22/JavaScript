@@ -1,11 +1,6 @@
 "use strict";
 
 /*
-Выполнить все задачи. Комментарии, в которых написаны задачи, не стирать, 
-код с решением задачи пишем под комментарием.
-*/
-
-/*
 1. Найти по id, используя getElementById, элемент с id равным "super_link" и
 вывести этот элемент в консоль.
 */
@@ -28,25 +23,21 @@ allLinks.forEach((element) => {
 элементе с классом "card-body" и вывести полученную коллекцию в консоль.
 */
 
-const cardBodyEl = document
-  .querySelector(".card-body")
-  .querySelectorAll(".card-link");
-console.log(cardBodyEl[0], cardBodyEl[1]);
-
+const cardBodyEl = document.querySelectorAll(".card-body .card-link");
+console.log(cardBodyEl);
 /*
 4. Найти первый попавшийся элемент на странице, у которого есть атрибут
 data-number со значением 50 и вывести его в консоль.
 */
 
-const firstDataNumber = document.querySelectorAll('[data-number="50"]');
-console.log(firstDataNumber[0]);
+const firstDataNumber = document.querySelector('[data-number="50"]');
+console.log(firstDataNumber);
 
 /*
 5. Выведите содержимое title страницы в консоль.
 */
 
-const tagTitle = document.querySelector("title");
-console.log(tagTitle.textContent);
+console.log(document.title);
 
 /*
 6. Получите элемент с классом "card-title" и выведите его родительский узел

@@ -1,11 +1,6 @@
 "use strict";
 
 /*
-Выполнить все задачи. Комментарии, в которых написаны задачи, не стирать, 
-код с решением задачи пишем под комментарием.
-*/
-
-/*
 1. Ко всем элементам, имеющим класс "dropdown-item" добавить еще один класс
 "super-dropdown", необходимо использовать методы forEach, querySelectorAll и
 свойство classList у элементов.
@@ -13,7 +8,7 @@
 
 const dropEls = document.querySelectorAll(".dropdown-item");
 dropEls.forEach((dropEls) => {
-  dropEls.classList.add("excellent-dropdown");
+  dropEls.classList.add("super-dropdown");
 });
 console.log(dropEls);
 
@@ -23,6 +18,9 @@ console.log(dropEls);
 не было.
 */
 
+document.querySelector(".btn").classList.toggle("btn-secondary");
+
+/*
 const btnEl = document.querySelector(".btn");
 if (btnEl.classList.contains("btn-secondary")) {
   btnEl.classList.remove("btn-secondary");
@@ -30,6 +28,7 @@ if (btnEl.classList.contains("btn-secondary")) {
   btnEl.classList.add("btn-secondary");
 }
 console.log(btnEl);
+*/
 
 /*
 3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
@@ -55,7 +54,7 @@ console.log(divDrop);
 */
 
 const idEl = document.querySelector("#dropdownMenuButton");
-document.getElementById("dropdownMenuButton").id = "superDropdown";
+idEl.id = "superDropdown";
 console.log(idEl);
 
 /*
