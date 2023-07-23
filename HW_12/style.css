@@ -152,7 +152,7 @@ header {
     border-radius: 3px;
     font-size: 14px;
   }
-
+  
 .basketRow {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -718,6 +718,11 @@ section {
         display: none;
     }
 
+ .basket {
+    width: 600px;
+  }
+
+
     .main__section {
         justify-content: center;
         padding-left: 56px;
@@ -869,6 +874,10 @@ section {
     .hide {
         display: none;
     }
+
+    .basket {
+    font-size: 16px;
+  }
 
     .main__section {
         justify-content: center;
